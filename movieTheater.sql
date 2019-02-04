@@ -14,7 +14,7 @@ create table movie(
 create table seat( 
   seatID INT PRIMARY KEY AUTO_INCREMENT, 
   rowName VARCHAR(50) NOT NULL,
-  roomID INT NOT NULL,
+  roomID INT NOT NULL AUTO_INCREMENT,
   isReserved BOOLEAN NOT NULL,
   CONSTRAINT seat_fk_screeningRoom
     FOREIGN KEY (roomID)
